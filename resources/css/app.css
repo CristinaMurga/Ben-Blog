@@ -1,0 +1,62 @@
+@import 'bootstrap';
+@import 'bootstrap-icons';
+
+
+:root {
+    --color1: #1D3557;
+    --color3: #457B9D;
+    --color4: #A8DADC;
+    --color2: #edf6f9;
+    --color5: #E63946;
+}
+
+*{
+    color: var(--color1)
+}
+
+
+.navbarcolor {
+    background-color: var(--color1);
+    color: var(--color2);
+}
+.coloredContainer {
+    background-color: var(--color2);
+}
+
+h1,h2,h3,h4  {
+    color: var(--color3);
+}
+
+i {
+    color: white;
+}
+.categoryBadge {
+    background-color: var(--color3);
+    color: white;
+}
+.colorLinks {
+    color: var(--color3);
+}
+.editBtn {
+    background-color: var(--color4);
+    border-color: var(--color4);
+    color: white;
+}
+
+.readMoreBtn {
+    background-color: var(--color3) ;
+    color: white;
+}
+.removeBtn {
+    background-color: var(--color5);
+    border-color: var(--color5);
+    color: white;
+}
+.submitBtn {
+    background-color: var(--color3);
+    color: white;
+}
+.footerColors {
+    background-color: var(--color1);
+    color: var(--color2);
+}
