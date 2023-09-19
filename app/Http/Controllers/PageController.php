@@ -8,16 +8,9 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function home()
-    {
-        $auth = [
-            'name' => 'Cris',
-            'email' => 'cris@example.com',
-        ];
-    
-        //$auth = [];
-        
-        return view('home', compact('auth'));
-
+    {   
+        $lastestArticles = Article::take(4)->get()->sortByDesc('created_at');
+        return view('home', compact('lastestArticles'));
     }
 
     public function index(Article $article)

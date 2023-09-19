@@ -1,30 +1,108 @@
 @import 'bootstrap';
 @import 'bootstrap-icons';
+/*General*/
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color6);
+}
 
+body {
+    margin: 0px;
+    padding: 0px;
+}
 
 :root {
-    --color1: #1D3557;
-    --color3: #457B9D;
-    --color4: #A8DADC;
-    --color2: #edf6f9;
-    --color5: #E63946;
+    --color1: #80AB88;
+    --color2: #82ae9c;
+    --color3: #6b9070;
+    --color4: #c0d6c2;
+    --color5: #EBEBE9;
+    --color6: #173421
+    
+}
+.bg-color3 {
+    background-color: var(--color3);
 }
 
-*{
-    color: var(--color1)
+.bg-color4 {
+    background-color: var(--color4);
+}
+.bg-color5 {
+    background-color: var(--color5);
 }
 
 
-.navbarcolor {
-    background-color: var(--color1);
-    color: var(--color2);
+.navbarhome {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
 }
-.coloredContainer {
-    background-color: var(--color2);
+.navbarGeneral {
+    margin: 15px 15px 0 15px;
+    background-color: var(--color3);
+    color: white;
+}
+.navbaritemborder {
+    border: 0 px ;
+    font-weight: 600;
+}
+.navbaritemborderWhite {
+    border: 0px white;
+    font-weight: 800;
+    border-radius: 0%;
+}
+/*Home Page*/
+header {
+    height: 300px;
+    width: auto;
+    margin: 15px;
+    position: relative;
+    z-index: 0;
+}
+.img-header {
+   height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
-h1,h2,h3,h4  {
-    color: var(--color3);
+header > h1 {
+    position: absolute;
+    top: 75px;
+    left: 9%;
+    z-index: 0;
+    font-size: 28px;
+}
+.lastestArtContainer {
+    padding: 60px 20px 90px 20px;
+}
+
+.h3-philosophy{
+    padding-top: 75px;
+    padding-bottom: 0px;
+    font-size: 18px;
+
+}
+.i-philosophy {
+    padding-bottom: 20px;
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    
+}
+.p-philosophy{
+    padding: 0 50px;
+    text-align: justify;
+    font-size: 11px
+}
+/*All the articles*/
+.articlesHeader {
+    margin-top: 0px;
+}
+
+.cardEdit {
+    box-shadow: -4px 2px 22px 2px var(--color6);
+    border-radius: 0;
+    border: none;
 }
 
 i {
@@ -56,7 +134,130 @@ i {
     background-color: var(--color3);
     color: white;
 }
-.footerColors {
-    background-color: var(--color1);
-    color: var(--color2);
+
+@media only screen and (min-width: 992px) 
+{
+    .navbaritemborder {
+        border: solid 3px ;
+        font-weight: bold;
+        border-radius: 0;
+    }
 }
+
+@media only screen and (min-width: 311px) 
+{
+    header > h1 {
+        top: 74px;
+        left: 12%;
+        font-size: 31px;
+    }
+    .h3-philosophy{
+        font-size: large;
+        padding-bottom: 20px;
+        padding-top: 0;
+        font-size: 25px;
+    }
+    
+    .p-philosophy{
+        padding: 0 50px;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+
+}
+
+@media only screen and (min-width: 380px) 
+{
+    header > h1 {
+        top: 74px;
+        left: 17%;
+        font-size: 35px;
+    }
+
+
+}
+
+@media only screen and (min-width: 440px) 
+{
+    header > h1 {
+        top: 74px;
+        left: 20%;
+        font-size: 40px;
+    }
+}
+@media only screen and (min-width: 520px) 
+{
+    header > h1 {
+        top: 74px;
+        left: 22%;
+        font-size: 45px;
+    }
+}
+@media only screen and (min-width: 620px) 
+{
+    header > h1 {
+        top: 70px;
+        left: 24%;
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 720px) 
+{
+    header > h1 {
+        top: 70px;
+        left: 28%;
+        font-size: 52px;
+    }
+}
+@media only screen and (min-width: 820px) 
+{
+    header > h1 {
+        top: 65px;
+        left: 30%;
+        font-size: 58px;
+    }
+}
+@media only screen and (min-width: 920px) 
+{
+    header > h1 {
+        top: 63px;
+        left: 32%;
+        font-size: 60px;
+    }
+}
+@media only screen and (min-width: 1100px) 
+{
+    header > h1 {
+        top: 60px;
+        left: 35%;
+        font-size: 64px;
+    }
+}
+@media only screen and (min-width: 1400px) 
+{
+    header > h1 {
+        top: 54px;
+        left: 37%;
+        font-size: 80px;
+    }
+}
+@media only screen and (max-width: 768px) 
+{
+     .container-philosophy{
+        width: 100%;
+        padding: 300px 0;
+    }
+    .h3-philosophy{
+        padding-top: 75px;
+       
+    }
+    .p-philosophy{
+        padding-bottom: 100px;
+    }
+}
+
+
+
+

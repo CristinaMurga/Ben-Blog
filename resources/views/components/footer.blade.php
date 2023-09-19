@@ -1,8 +1,8 @@
-<footer class=" py-4 footerColors">
+<footer class=" py-4 footerColors bg-color3 text-white">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-              <h6 class="footerColors">{{ config('app.name') }}</h6>        
+              <h6 class="text-white">{{ config('app.name') }}</h6>        
             </div>
             <div class="col-md-4">
              
